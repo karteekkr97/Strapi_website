@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pnb_house_loans",
+  "info": {
+    "singularName": "pnb-house-loan",
+    "pluralName": "pnb-house-loans",
+    "displayName": "PNB House Loan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "About_PBN": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "family_insurances",
+  "info": {
+    "singularName": "family-insurance",
+    "pluralName": "family-insurances",
+    "displayName": "Family insurance",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Premium": {
+      "type": "string"
+    },
+    "Coverage": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Insurance_name": {
+      "type": "string"
+    },
+    "Insurance_plan": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_loans",
+  "info": {
+    "singularName": "home-loan",
+    "pluralName": "home-loans",
+    "displayName": "Home Loan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bank_name": {
+      "type": "string"
+    },
+    "Interest_rate": {
+      "type": "string"
+    },
+    "Loan_amount": {
+      "type": "string"
+    },
+    "Max_tenure": {
+      "type": "string"
+    },
+    "Processing_fee": {
+      "type": "string"
+    },
+    "Bank_logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

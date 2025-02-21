@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Lead",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Phone_number": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Date_of_birth": {
+      "type": "date"
+    },
+    "Residence_city": {
+      "type": "string"
+    },
+    "Residence_pincode": {
+      "type": "integer"
+    },
+    "Bank_name": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

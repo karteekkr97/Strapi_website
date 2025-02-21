@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banks",
+  "info": {
+    "singularName": "bank",
+    "pluralName": "banks",
+    "displayName": "Credit Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bank_name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Reward_type": {
+      "type": "string"
+    },
+    "Joining_fee": {
+      "type": "string"
+    },
+    "Annual_fee": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Features": {
+      "type": "text"
+    },
+    "Pricing": {
+      "type": "text"
+    },
+    "documents_required": {
+      "type": "text"
+    }
+  }
+}

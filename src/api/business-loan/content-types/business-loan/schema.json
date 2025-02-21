@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_loans",
+  "info": {
+    "singularName": "business-loan",
+    "pluralName": "business-loans",
+    "displayName": "Business Loan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bank_name": {
+      "type": "string"
+    },
+    "Max_tenure": {
+      "type": "string"
+    },
+    "Interest_rate": {
+      "type": "string"
+    },
+    "Processing_fee": {
+      "type": "string"
+    },
+    "Features": {
+      "type": "text"
+    },
+    "Pricing": {
+      "type": "text"
+    },
+    "documents_required": {
+      "type": "text"
+    },
+    "Bank_logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

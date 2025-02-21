@@ -1,0 +1,908 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.App-logo {
+  pointer-events: none;
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.loan
+{
+  height: 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  background: #f8f9fa;
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+.hero-section{
+  box-shadow: 0 8px 24px 0 rgba(23,50,101,.3);
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #f54b42;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #c83d36;
+}
+
+.services-section, .testimonials-section, .about-section, .footer-section {
+  background-color: #f8f8f8;
+}
+
+.service-cards, .testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card, .testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  background-color: #282c34;
+  margin-top: 50px;
+  color: white;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content img {
+  width: 100%; /* Adjust as needed */
+  max-height:500px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+  bottom: 10px; 
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #555;
+}
+/* App.css or your relevant CSS file */
+
+.slide {
+  position: relative;
+}
+
+.slide-text {
+  position: absolute;
+  top: 25%;
+  left: 80px;
+  color: #fff;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+.text-white
+{
+  margin-top: 0;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+.btn-primary
+{
+  background: #ff8900;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 18px;
+  border-radius: 10px;
+}
+
+.row
+{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.container
+{
+    box-shadow: 0 2px 4px rgba(0, 0, 20, .08), 0 1px 2px rgba(0, 0, 20, .08) !important
+}
+
+.d-flex
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ms-4 p,.ms-4 h2{
+  margin: 0;
+}
+
+.Offering-content
+{
+  display: flex;
+  justify-content: center;
+}
+
+.Offering-content div{
+  width: 35%;
+  }
+
+.Offering-content div p{
+  font-size: 16px;
+    font-weight: 400;
+}
+
+.loans-category .categories img
+{
+  width: 50px;
+}
+
+.loans-category .slick-slider
+{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 40px 0px;
+  justify-content: center;
+}
+
+.loans-category .slick-slider .slick-list
+{
+  width: 70%;
+  text-align: left;
+}
+
+.card-body
+{
+  background: #fff;
+  padding: 20px;
+  margin: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 20, .08), 0 1px 2px rgba(0, 0, 20, .08) !important;
+}
+.input-group input[type = "email"] {
+  width: 315px;
+  height: 40px;
+  padding: 5px;
+}
+.loan-description
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loan-description .content
+{
+  display: flex;
+  width: 70%;
+}
+
+.loan-description .content .col-xl-4
+{
+  border: 1px solid #e9ecef;
+}
+
+.loan-description .content .col-xl-4 .icon-lg
+{
+  height: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    border-radius: 50% !important;
+    color: rgb(98 75 255);
+    border: 1px solid;
+    background: #fff;
+    align-items: center;
+    position: relative;
+    left: 43%;
+    margin-top: -18px;
+}
+
+.why-people .mb-4
+{
+  color: rgb(98 75 255);
+}
+
+.why-people a
+{
+  text-decoration: none;
+    border: 1px solid #624bff;
+    padding: 10px;
+}
+
+.why-people a:hover
+{
+  color: #fff;
+  background: #624bff;
+}
+
+.why-people p
+{
+  margin-bottom: 30px;
+}
+
+.footer-section .top img
+{
+  width: 60px;
+}
+
+.footer-section .top
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0px;
+  align-items:center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links .cta-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  padding: 0;
+}.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links .cta-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.personal-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+ 
+li.blog-post
+{
+  list-style: none;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+}
+.personal-list .list
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  width: 80%;
+  background: white;
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+
+.personal-list .list .image
+{
+  flex: 0 1 20%;
+}
+
+.personal-list .list .content
+{
+  padding: 5px;
+  flex: 0 1 15%;
+}
+.banner-middle
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-middle .text{
+  width: 74%;
+  margin-bottom: 20px;
+}
+
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fields
+{
+  width: 50%;
+}
+.field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.field label {
+  display: block;
+  width: 30%;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space:nowrap;
+}
+
+.field input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.field input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+.dropdown:after {
+  color: #444;
+  content: ' ▾';
+}
+button {
+  background-image: linear-gradient(117deg, #ff6700 39%, #ff8900 76%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  white-space: nowrap;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+    background-color: #FF7448;
+    transform: scale(1.05);
+}
+
+
+.form.calc .fields
+{
+  max-width: 500px;
+}
+
+.bank-name h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.loan-calc
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.loan-calculator {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.input-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-section label {
+  flex: 1;
+}
+
+.input-section input[type="range"] {
+  flex: 2;
+  margin: 0 20px;
+}
+
+.output-section {
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.amortization-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.amortization-table th, .amortization-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.amortization-table th {
+  background-color: #f4f4f4;
+}
+
+.main-section
+{
+  display: flex;
+  margin-bottom: 50px;
+  gap: 50px;
+  background: white;
+  padding: 20px;
+  margin-top: 50px;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.loan-eligibility .fields
+{
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.fields-img
+{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.fields-img .image
+{
+  width: 50%;
+  height: 600px;
+}
+
+.fields-img .image img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.fields-img button
+{
+  width: 250px;
+}
+.form.eligicalc .field
+{
+  margin-bottom: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.input-group .btn-primary
+{
+  border-radius: 0;
+}
+
+.list .attributes 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  background: white;
+  margin-bottom: 15px;
+}
+.personal.health .personal-list .list
+{
+  display: block;
+}
+.list .description p
+{
+  white-space: break-spaces;
+}
+
+.personal.health .personal-list .list .content
+{
+  white-space: nowrap;
+}
+.list .description
+{
+  text-align: left;
+}
+.input-group
+{
+  display: flex;
+}
+@media only screen and (max-width:767px)
+{
+  .navbar
+  {
+    padding: 20px 10px;
+    font-size: 13px;
+    gap: 15px;
+  }
+  .nav-links
+  {
+    padding: 0;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .nav-links li
+  {
+    padding: 10px;
+  }
+  .nav-links .button
+  {
+    padding: 10px;
+    font-size: 13px;
+ } 
+  .hero-content .slide-text
+  {
+    left: 20px;
+    font-size: 14px;
+  }
+  .hero-content .slide-text p
+  {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .hero-content .slide-text a
+  {
+    padding: 5px;
+  }
+  .container .row
+  {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  .container .row h2
+  {
+    font-size: 26px;
+  }
+  .Offering-content div
+  {
+    width: 100%;
+  }
+  .loans-category .slick-slider .slick-list
+  {
+    width: 100%;
+  }
+  .loans-category .card-body
+  {
+    min-height: 440px;
+    height: auto;
+    margin: 5px;
+    height: 420px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .loans-category p
+  {
+    margin-bottom: 0;
+  }
+  .loan-description .card-body
+  {
+    margin: 20px 5px;
+    padding: 20px 10px;
+    border-radius: 6px;
+  }
+  .loan-description .content
+  {
+    width: 100%;
+    display: block;
+  }
+  .Offering-content p
+  {
+    margin: 0;
+  }
+  .Offering-content
+  {
+    margin: 0 20px;
+  }
+  .Offering-content h1
+  {
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+  .container .row .ms-4.lh-1
+  {
+    width: 100px;
+  }
+  .service-cards
+  {
+    flex-wrap: wrap;
+  }
+  .testimonial-cards
+  {
+    flex-wrap: wrap;
+  }
+  .footer-section .top
+  {
+    display: block;
+    padding: 10px;
+  }
+  .slide img
+  {
+    height: 500px;
+  }
+  .why-people h2
+  {
+    font-size: 26px;
+  }
+  .testimonials-section h2
+  {
+    font-size: 26px;
+  }
+  .personal-list .list
+  {
+    display: block;
+    padding: 20px 0px;
+  }
+  .main-section
+  {
+    display: block;
+  }
+  .amortization-table
+  {
+    font-size: 12px;
+    margin: 10px;
+    width: 95%;
+  }
+  .blog ul
+  {
+    padding: 0;
+  }
+  .fields-img
+  {
+    display: block;
+    width: 85%;
+  }
+  .fields-img .image
+  {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+  .fields-img .fields
+  {
+    width: 100%;
+  }
+  .form.eligicalc
+  {
+    display: block;
+    margin: 10px;
+    width: 90%;
+  }
+  .form.eligicalc .field{
+    flex-direction: column;
+    gap: 0;
+  }
+  .personal.health .description
+  {
+    padding: 0px 10px;
+  }
+  .personal.health .attributes
+  {
+    display: block;
+  }
+  .personal.health .personal-list .list .content
+  {
+    white-space: normal;
+  }
+}
