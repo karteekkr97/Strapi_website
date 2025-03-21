@@ -1,61 +1,47 @@
-# 🚀 Getting started with Strapi
+# 🚀 Strapi CMS Website
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## 🏆 About This Project
 
-### `develop`
+This project is a **Strapi-based headless CMS** designed to provide a scalable and flexible content management system. It allows seamless content management with an **API-first approach**, supporting both **REST & GraphQL APIs**. The backend is built using **Strapi (Node.js)**, and the frontend integrates with **React.js/Next.js**.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## 🔥 Features
 
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+✅ **Custom Content Types** – Easily create and manage different types of content  
+✅ **API-First Approach** – Provides both **REST & GraphQL APIs**  
+✅ **Role-Based Access Control (RBAC)** – Secure authentication & authorization  
+✅ **Media Library** – Manage images, videos, and documents  
+✅ **Database Support** – Uses **PostgreSQL** (can be configured for MySQL, SQLite, etc.)  
+✅ **SEO & Metadata Support** – Helps in optimizing content for search engines  
+✅ **Extensibility** – Extend functionality with Strapi plugins  
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## 🛠️ Tech Stack
+
+- **Backend (Strapi CMS)**
+  - Strapi (Node.js, Koa)
+  - PostgreSQL (default, can be changed)
+  - JWT Authentication
+  - Cloudinary (optional for media storage)
+
+- **Frontend**
+  - React.js / Next.js (if applicable)
+  - Tailwind CSS (for styling)
+  - Axios (for API requests)
+
+---
+
+## 🔧 Installation & Setup (Backend + Frontend)
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/karteekkr97/Strapi_website.git
+cd your-repo
+
+cd backend
+npm install
+npm run develop
+
+cd frontend
+npm install
+npm run dev
